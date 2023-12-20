@@ -1,20 +1,25 @@
 @echo off
-color E
+
 :main
     cls
-    echo === THIS MY LIFE ===
+    echo === TASK MANAGER ===
     echo.
-    echo 1.Productive
-    echo 2.Hiburan
+    echo [1] File Explorer
+    echo [2] Open App
+    echo [3] MS Office
     echo.
 
-    set /p pilih="Pilih No > "
+    set /p pilih="Select No > "
 
     if %pilih%==1 (
-        call produktiv.bat
+        call file_explorer.bat
 
     ) else if %pilih%==2 (
-        call hiburan.bat
+        call open_app.bat
+
+    ) else if %pilih%==3 (
+        call ms_office.bat
+
     ) else (
         goto :main
     )
