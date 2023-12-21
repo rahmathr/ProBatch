@@ -2,7 +2,7 @@
 
 :main
     cls
-    echo === TASK MANAGER ===
+    echo __WELCOME ADMIN__
     echo.
     echo [1] File Explorer
     echo [2] Open App

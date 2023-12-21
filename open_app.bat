@@ -4,6 +4,7 @@ title Open App
 :ulang
     :openApp
         cls
+        echo __Internet Searching__
         echo.
         echo [1] Google Chrome
         echo [2] Microsoft Edge

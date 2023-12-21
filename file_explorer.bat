@@ -3,6 +3,7 @@ title File Explorer
 
     :fileExplorer
         cls
+        echo __Manage File__
         echo.
         echo [1] Create Folders
         echo [2] Deleting Folders
@@ -28,7 +29,7 @@ title File Explorer
             goto :fileExplorer 
         )
 
-    ::BUAT FOLDER
+    REM BUAT FOLDER
         :buatFolder
             set /p namaFolder="> Nama Folder : "
             md %namaFolder%
@@ -41,7 +42,7 @@ title File Explorer
                 goto :fileExplorer
             )
             
-    ::HAPUS FOLDER
+    REM HAPUS FOLDER
         :hapusFolder
             set /p hapusFolder="> Hapus Folder : "
             rd %hapusFolder%
@@ -54,7 +55,7 @@ title File Explorer
                 goto :fileExplorer
             )
             
-    ::BUAT FILE
+    REM BUAT FILE
         :buatFile
             set /p namaFile="> Nama File : "
             set /p buatEkstensi="> Ekstensi File (tanpa titik) : "

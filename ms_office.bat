@@ -4,6 +4,7 @@ title MS Office
 :ulang
     :msOffice
         cls
+        echo __MS Office__
         echo.
         echo [1] Word
         echo [2] Excel
