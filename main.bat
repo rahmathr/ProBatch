@@ -2,23 +2,25 @@
 
 :main
     cls
-    echo __WELCOME ADMIN__
+    echo WELCOME ADMIN
+    set date=%date%
+    echo %date%
     echo.
-    echo [1] File Explorer
-    echo [2] Open App
-    echo [3] MS Office
+    echo [1] Explorer
+    echo [2] Browser
+    echo [3] Office
     echo.
 
     set /p pilih="Select No > "
 
     if %pilih%==1 (
-        call file_explorer.bat
+        call explorer.bat
 
     ) else if %pilih%==2 (
-        call open_app.bat
+        call browser.bat
 
     ) else if %pilih%==3 (
-        call ms_office.bat
+        call office.bat
 
     ) else (
         goto :main

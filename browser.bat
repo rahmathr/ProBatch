@@ -1,10 +1,12 @@
 @echo off
-title Open App
+title Browser
 
 :ulang
-    :openApp
+    :browser
         cls
-        echo __Internet Searching__
+        echo Internet Search - Browser
+        set date=%date%
+        echo %date%
         echo.
         echo [1] Google Chrome
         echo [2] Microsoft Edge
@@ -22,7 +24,7 @@ title Open App
         ) else if %input%==0 (
             call main.bat
         ) else (
-            goto :openApp
+            goto :browser
         )
 
 goto :ulang

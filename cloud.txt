@@ -1,0 +1,32 @@
+set /p inginBuat="> Ingin Membuat Lagi? (y/t) : "
+            echo.
+            if %inginBuat%==y (
+                goto :buatFolder
+            ) else if %inginBuat%==t (
+                goto :explorer
+            )
+
+set /p inginHapus="> Ingin Menghapus Lagi? (y/t) : "
+            echo.
+            if %inginHapus%==y (
+                goto :hapusFolder
+            ) else if %inginHapus%==t (
+                goto :explorer
+            )
+
+set /p inginBuatFile="Ingin Membuat Lagi (y/t)? "
+            echo.
+            if %inginBuatFile%==y (
+                goto :buatFile
+            ) else if %inginBuatFile%==t (
+                goto :explorer
+            )
+
+set /p inginHapusFile="Ingin Menghapus Lagi (y/t)? "
+            echo.
+            if %inginHapusFile%==y (
+                goto :hapusFile
+            ) else if %inginHapusFile%==t (
+                goto :explorer
+            )
+

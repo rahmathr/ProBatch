@@ -4,7 +4,9 @@ title MS Office
 :ulang
     :msOffice
         cls
-        echo __MS Office__
+        echo Microsoft Office
+        set date=%date%
+        echo %date%
         echo.
         echo [1] Word
         echo [2] Excel
